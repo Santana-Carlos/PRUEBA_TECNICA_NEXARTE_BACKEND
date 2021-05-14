@@ -9,6 +9,6 @@ class CiudadController extends Controller
 {
     public function indexByDepartamento(Ciudad $ciudad)
     {
-        return response()->json(["success" => true, "ciudades" => Ciudad::where('departamento_id', $ciudad->id)->first()], 200);
+        return response()->json(["success" => true, "ciudades" => Ciudad::where('departamento_id', $ciudad->id)->get()], 200);
     }
 }
