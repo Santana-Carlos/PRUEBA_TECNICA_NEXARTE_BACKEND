@@ -60,7 +60,7 @@ class CotizacionController extends Controller
             'fecha' => 'Fecha de realización: ' . $request->fecha_creacion,
         ];
 
-        $mails = ['diego.colmenares@uao.edu.co', 'diegocolmenares03@gmail.com', 'alvinyakitori0303@gmail.com', 'jose.santamarna@uao.edu.co'];
+        $mails = ['nleon@processoft.com.co', 'ocalero@processoft.com.co', 'jmartinez@processoft.com.co', 'diego.colmenares@uao.edu.co'];
    
         Mail::to($mails)->send(new MyMail($details));
 
